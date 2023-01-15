@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <title></title>
+
+    <link href="Index.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+    	function toggle_signUp_Form() {
+    	  signUp_div = document.getElementById("signUp-div");
+		  prompt_div = document.getElementById("prompt-div");
+
+		  prompt_div.classList.toggle("prompt-section-hide");
+		  signUp_div.classList.toggle("signUp-div-show");
+		}
+		function toggle_logIn_Form() {
+		  logIn_div = document.getElementById("logIn-div");
+		  prompt_div = document.getElementById("prompt-div");
+
+		  prompt_div.classList.toggle("prompt-section-hide");
+		  logIn_div.classList.toggle("logIn-div-show");
+		}
+    </script>
+
+</head>
+<body>
+    <div class="container cust_container">
+        	<div class="">
+              <span><img src="logo.png"></span>
+            </div>
+
+        	<div class="forms-container">
+
+        		<div id="signUp-div">
+	                <form action="insert.php" method="post">
+	                	<fieldset class="signUp-form">
+	                		<legend class="signUp-form-head"><label>SIGN UP</label></legend>
+	                		<label>Email:</label><br>
+	                		<input type="text" name="email" class="signUp-inputs" placeholder="Ex: abc@domain_name" required /><br><br>
+	                		<label>Username:</label><br>
+	                		<input type="text" name="username" class="signUp-inputs" required><br><br>
+	                		<label>Password:</label><br>
+	                		<input type="password" name="pass" class="signUp-inputs" placeholder="Between 8-10 chars" required maxlength="10" minlength="8"/><br><br>
+	                		<label>Confirm Password:</label><br>
+	                		<input type="password" name="pass1" class="signUp-inputs" placeholder="Be careful!" required maxlength="10" minlength="8"/>
+	                		<p style="text-align: center;"><input type="submit" name="signUp_details"></p>
+	                	</fieldset>
+	                </form>
+	            </div>
+
+	            <div id="prompt-div" class="prompt-struct">
+	            	<div class="row">
+		                <div class=" col-12 col-md-6">
+		                    <p><h5 class="text-info"><label>NEW TO WEBSITE?</label></h5></p>
+		                    <p>
+		                    	<a href="javascript:void(0)" class="entry-links" onclick="toggle_signUp_Form()">
+		                    		<img src="assets/signup.png" class="img-rnd"><br>
+		                    		Sign Up!
+		                    	</a>
+		                    </p>
+		                </div>
+		                <div class=" col-12 col-md-6">
+		                    <p><h5 class="text-info"><label>EXISTING USER?</label></h5></p>
+		                    <p>
+		                    	<a href="#nowhere" class="entry-links" onclick="toggle_logIn_Form()">
+		                    		<img src="assets/login.jpg" class="img-rnd"><br>
+		                    		Log In!
+		                		</a>
+		                	</p>
+		                </div>
+		            </div>
+	            </div>
+	            
+
+	            <div id="logIn-div">
+	                <form action="process1.php" method="post">
+	                	<fieldset class="logIn-form">
+	                		<legend class="logIn-form-head"><label>LOG IN</label></legend>
+	                		<label>Username:</label><br>
+	                		<input type="text" name="username" class="logIn-inputs" required><br><br>
+	                		<label>Password:</label><br>
+	                		<input type="password" name="password" class="logIn-inputs" required maxlength="10" minlength="8"/><br><br>
+	                		<p style="text-align: center;"><input type="submit" name="login_details"></p>
+	                	</fieldset>
+	                </form>
+	            </div>
+
+        	</div>
+
+        	<table cellpadding="10" class="describe-features">
+        		<tr >
+        			<td class="switch-arrows-col"><a href="#none" class="switch-arrows stretched-link"></a></td>
+        			<td>
+        				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+	                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+	                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+	                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+	                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        			</td>
+        			<td class="switch-arrows-col"><a href="#none" class="switch-arrows stretched-link">></a></td>
+        		</tr>
+        	</table>
+    </div>
+</body>
+</html>

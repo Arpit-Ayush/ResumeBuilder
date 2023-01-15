@@ -1,0 +1,226 @@
+﻿body {
+  background: url("assets/index_bg.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.cust_container {
+  color: rgb(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+/*Prompt section*/
+
+.prompt-struct {
+  width: 100%;
+  flex-shrink: 0;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.entry-links {
+  color: white;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.entry-links:hover {
+  text-decoration: none;
+  color: lawngreen;
+}
+
+.entry-links:hover img {
+  box-shadow: 0 0 4px 4px lawngreen;
+}
+
+/*Forms*/
+
+.signUp-form,
+.logIn-form {
+  position: relative;
+  flex-shrink: 0;
+  width: 410px;
+  padding-left: 7px;
+  font-size: 1.3em;
+  color: #16b3cc;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.signUp-form-head,
+.logIn-form-head {
+  background-color: #16b3cc;
+  padding: 2px 4px 2px 4px;
+  color: white;
+  width: auto;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.signUp-inputs,
+.logIn-inputs {
+  border-radius: 5px;
+  width: 387px;
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.signUp-inputs:hover,
+.logIn-inputs:hover {
+  border: 2.5px solid #17a2b8;
+}
+
+.signUp-inputs:focus,
+.logIn-inputs:focus {
+  outline: none;
+  border: 2.5px solid #17a2b8;
+  background-color: white;
+  color: #16b3cc;
+}
+
+.img-rnd {
+  border-radius: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 4px;
+  background-color: #17a2b8;
+  color: white;
+}
+
+/*Describing features section*/
+
+.describe-features {
+  margin: auto;
+}
+
+.switch-arrows-col {
+  position: relative;
+  vertical-align: middle;
+}
+
+.switch-arrows {
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+}
+
+.switch-arrows:hover {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.features{
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+#desc1, #desc2, #desc3{
+  flex-shrink: 0;
+}
+
+/****For animation****/
+
+/*aligning elements*/
+
+.forms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.description-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/*animation starts*/
+
+#signUp-div,
+#logIn-div {
+  transition: transform 1s ease-in-out;
+}
+
+#prompt-div {
+  transition: opacity 1s linear;
+}
+
+.signUp-div-show {
+  transform: translateX(180%);
+}
+
+.logIn-div-show {
+  transform: translateX(-185%);
+}
+
+.prompt-section-hide {
+  opacity: 0;
+}
+
+/* footer section */
+
+.footer {
+  background: rgb(126, 14, 14);
+  color: #ac1d1d;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a18cce7;
+}
+.footer h3 {
+  color: rgb(236, 13, 236);
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.Copyright {
+  text-align: center;
+}
+.menu {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
